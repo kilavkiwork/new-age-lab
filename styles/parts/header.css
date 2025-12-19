@@ -1,11 +1,19 @@
+.shadow_top-line {
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
+}
+
 .top-line {
   position: relative;
   display: flex;
   width: 100%;
   min-height: 44px;
   background-color: var(--white);
-  mask-image: radial-gradient(300px 40px at 50% 100%, transparent 98%, black 100%);
-
+  mask-image: radial-gradient(180px 44px at calc(50% - (940px / 2) + 180px) 130%, transparent 100%, black 100%);
+  mask-repeat: no-repeat;
+  filter: drop-shadow(0px 40px 10px var(--black));
+  /* filter: drop-shadow(0px 4px 10px rgba(255, 0, 0, 1)); */
+  /* filter: drop-shadow(0px 40px 0px 10px var(--black)); */
+  /* container for top-line */
   & .container {
     display: flex;
     justify-content: flex-end;
@@ -24,7 +32,13 @@
   background: var(--cf7);
   border: none;
   transition: background var(--trans), color var(--trans);
+  cursor: pointer;
   &:hover {
+    color: var(--cf7);
+    background: var(--c5f);
+  }
+  /* active */
+  &.is-active {
     color: var(--cf7);
     background: var(--c5f);
   }
