@@ -1,0 +1,31 @@
+.top-line {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 44px;
+  background-color: var(--white);
+  mask-image: radial-gradient(300px 40px at 50% 100%, transparent 98%, black 100%);
+
+  & .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 4px;
+  }
+}
+
+.top-line__btn {
+  min-width: 40px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--cf5);
+  background: var(--cf7);
+  border: none;
+  transition: background var(--trans), color var(--trans);
+  &:hover {
+    color: var(--cf7);
+    background: var(--c5f);
+  }
+}

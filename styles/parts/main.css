@@ -9,12 +9,15 @@
   --secondary-color: #48556a;
   --white: #fff;
   --black: #333333;
-  --body-bg: #f3f3f3;
+  --body-bg: #eee;
+  --c5f: #5f5f5f;
+  --cf7: #f7f7f7;
   /* settings */
   --padding: 20px;
   --container: 940px;
+  --radius4: 4px;
   /* transition */
-  --trans: 0.4s, ease;
+  --trans: 0.4s ease;
 }
 
 *,
@@ -33,7 +36,8 @@ html {
 }
 
 body {
-  min-width: 320px;
+  margin: 0;
+  min-width: 480px;
   min-height: 100dvh;
   font-family: var(--main-font), system-ui, -apple-system, "Segoe UI";
   font-size: var(--font-size);
@@ -42,6 +46,8 @@ body {
   font-weight: 400;
   color: var(--black);
   background-color: var(--body-bg);
+  background-image: linear-gradient(rgba(220, 220, 220, 0.5), var(--body-bg), rgba(220, 220, 220, 0.5)),
+    url("../../assets/images/backgroung/pattern.png");
 }
 
 h1,
@@ -102,11 +108,17 @@ button {
   margin: 0 auto;
   width: calc(100% - (var(--padding) * 2));
   max-width: var(--container);
-
-  border: 3px solid orange;
 }
 
-.img-demo {
-  width: 100px;
-  height: 100px;
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--white);
+  border-radius: var(--radius4);
+  &:focus-visible {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+  }
 }

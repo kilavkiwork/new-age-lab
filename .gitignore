@@ -1,2 +1,4 @@
+.parcel_cache/
 _src/
 _temp/
+dist/
