@@ -10,7 +10,7 @@
   background-color: var(--white);
   /* media for top-line */
   @media (width >= 992px) {
-    mask-image: radial-gradient(180px 44px at calc(50% - (940px / 2) + 180px) 130%, transparent 100%, black 100%);
+    mask-image: radial-gradient(164px 44px at calc(49.65% - (940px / 2) + 164px) 130%, transparent 100%, black 100%);
     mask-repeat: no-repeat;
   }
   /* container for top-line */

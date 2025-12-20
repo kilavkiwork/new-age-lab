@@ -6,12 +6,13 @@
   --line-height: 1.428;
   /* colors */
   --primary-color: #006c86;
-  --secondary-color: #48556a;
+  /* --secondary-color: #48556a; */
   --white: #fff;
   --black: #333333;
   --body-bg: #eee;
   --c5f: #5f5f5f;
   --cf7: #f7f7f7;
+  --c96: #969696;
   /* settings */
   --padding: 20px;
   --container: 940px;
