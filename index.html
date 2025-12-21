@@ -21,35 +21,52 @@
   <body>
     <div class="wrapper">
       <header class="header">
+        <!-- top line -->
         <div class="shadow_top-line">
-          <section class="top-line">
+          <div class="top-line" aria-label="region" role="region">
             <div class="container">
               <button class="btn top-line__btn">Eng</button>
               <button class="btn top-line__btn">Aze</button>
               <button class="btn top-line__btn is-active">Рус</button>
             </div>
-          </section>
+          </div>
         </div>
-        <section class="heading">
+        <!-- end top-line  -->
+        <!-- heading -->
+        <div class="heading">
           <div class="container">
             <div class="logo">Logo</div>
             <div class="links">
-              <div class="links__column">
-                <a href="#"><span class="icon-link"></span> Lorem ipsum dolor sit </a>
-                <a href="#"><span class="icon-link"></span> Lorem ipsum</a>
-              </div>
-              <div class="links__column">
-                <a href="#"><span class="icon-link"></span> Lorem ipsum dolor</a>
-                <a href="#"><span class="icon-link"></span> Lorem ipsum dolor sit amet, consectetur adipiscing</a>
-              </div>
-              <div class="links__column">
-                <a href="#"><span class="icon-link"></span> Lorem ipsum dolor </a>
-                <a href="#"><span class="icon-link"></span> Lorem ipsum dolor sit</a>
-              </div>
+              <ul class="links__column">
+                <li>
+                  <a href="#"><span class="icon-link"></span> Lorem ipsum dolor sit </a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-link"></span> Lorem ipsum</a>
+                </li>
+              </ul>
+              <ul class="links__column">
+                <li>
+                  <a href="#"><span class="icon-link"></span> Lorem ipsum dolor</a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-link"></span> Lorem ipsum dolor sit amet, consectetur adipiscing</a>
+                </li>
+              </ul>
+              <ul class="links__column">
+                <li>
+                  <a href="#"><span class="icon-link"></span> Lorem ipsum dolor </a>
+                </li>
+                <li>
+                  <a href="#"><span class="icon-link"></span> Lorem ipsum dolor sit</a>
+                </li>
+              </ul>
             </div>
           </div>
-        </section>
-        <nav class="navbar">
+        </div>
+        <!-- end heading -->
+        <!-- nav -->
+        <nav class="navbar" aria-label="Main navigation">
           <div class="container">
             <button
               class="menu-toggle"
@@ -75,10 +92,16 @@
             </ul>
           </div>
         </nav>
+        <!-- end nav -->
       </header>
+      <!-- main -->
       <main class="main"></main>
+      <!-- end main -->
+      <!-- footer -->
       <footer class="footer"></footer>
+      <!-- end footer -->
     </div>
+    <!-- end wrapper -->
     <script type="module" src="./scripts/main.js"></script>
   </body>
 </html>
