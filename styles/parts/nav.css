@@ -1,0 +1,113 @@
+.navbar {
+  margin-block-start: 8px;
+  /* container for navbar */
+  .container {
+    position: relative;
+    display: flex;
+    min-height: 44px;
+    background: var(--c61);
+    filter: var(--drop-shadow);
+    /* white line */
+    &::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      width: 100%;
+      height: 4px;
+      background: var(--white);
+    }
+  }
+  /* media for navbar */
+  @media (width <= 768px) {
+    margin-block-start: 20px;
+  }
+}
+.navbar__items {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: auto;
+  width: 100%;
+  /* li - menu item */
+  & li {
+    @media (width >= 768px) {
+      &:not(:first-child) {
+        border-inline-start: 2px solid rgba(87, 39, 134, 0.3);
+      }
+      &:not(:last-child) {
+        border-inline-end: 2px solid rgba(255, 255, 255, 0.3);
+      }
+    }
+    & a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      text-transform: uppercase;
+      color: var(--white);
+      transition: background var(--trans);
+      /* hover for menu item */
+      &:hover {
+        background: var(--ca9);
+      }
+    }
+  }
+  /* active */
+  &.is-open {
+    height: auto;
+    padding-block: 20px;
+  }
+  /* media for navbar__items */
+  @media (width <= 768px) {
+    /* display: none; */
+    height: 0;
+    overflow: hidden;
+    grid-auto-flow: row;
+    row-gap: 20px;
+  }
+}
+
+.menu-toggle {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+  padding-inline: 20px;
+  font-size: 1rem;
+  line-height: 0.75;
+  text-transform: uppercase;
+  color: var(--white);
+  cursor: pointer;
+  transition: background var(--trans);
+  /* hover menu */
+  &:hover {
+    background: var(--ca9);
+  }
+  /* media for menu-toggle */
+  @media (width >= 768px) {
+    display: none;
+  }
+}
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3px;
+  & span {
+    max-width: 20px;
+    width: 20px;
+    height: 3px;
+    background: var(--white);
+    border-radius: 1px;
+    transition: transform var(--trans);
+  }
+  &.open {
+    span:nth-child(1) {
+      transform: translateY(100%) rotate(-225deg);
+    }
+    span:nth-child(2) {
+      display: none;
+    }
+    span:nth-child(3) {
+      transform: translateY(-100%) rotate(225deg);
+    }
+  }
+}

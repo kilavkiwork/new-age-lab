@@ -13,12 +13,17 @@
   --c5f: #5f5f5f;
   --cf7: #f7f7f7;
   --c96: #969696;
+  --c61: #616161;
+  --ca9: #a9a9a9;
+  --c572786: #572786;
+  --c91: #919191;
   /* settings */
   --padding: 20px;
   --container: 940px;
   --radius4: 4px;
   /* transition */
   --trans: 0.4s ease;
+  --drop-shadow: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
 }
 
 *,
