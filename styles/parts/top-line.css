@@ -1,0 +1,42 @@
+.shadow_top-line {
+  filter: drop-shadow(0px 4px 8px rgba(0, 0, 0, 0.2));
+}
+
+.top-line {
+  position: relative;
+  display: flex;
+  width: 100%;
+  min-height: 44px;
+  background-color: var(--white);
+  /* media for top-line */
+  @media (width >= 992px) {
+    mask-image: radial-gradient(164px 44px at calc(49.65% - (940px / 2) + 164px) 130%, transparent 100%, black 100%);
+    mask-repeat: no-repeat;
+  }
+  /* container for top-line */
+  & .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 4px;
+  }
+}
+
+.top-line__btn {
+  max-width: 40px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: var(--cf5);
+  background: var(--cf7);
+  &:hover {
+    color: var(--cf7);
+    background: var(--c5f);
+  }
+  /* active */
+  &.is-active {
+    color: var(--cf7);
+    background: var(--c5f);
+  }
+}
