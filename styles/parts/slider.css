@@ -1,7 +1,5 @@
 .slider {
   margin-block-start: 20px;
-  & .container {
-  }
 }
 
 .prev,

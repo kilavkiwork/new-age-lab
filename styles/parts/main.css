@@ -57,6 +57,7 @@ body {
   background-color: var(--body-bg);
   background-image: linear-gradient(rgba(220, 220, 220, 0.5), var(--body-bg), rgba(220, 220, 220, 0.5)),
     url("../../assets/images/backgroung/pattern.png");
+  hyphens: auto;
 }
 
 h1,
