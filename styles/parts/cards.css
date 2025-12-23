@@ -51,7 +51,7 @@
   /* text */
   & p {
     padding-block-start: 15px;
-    font-family: "Arial";
+    font-family: "Arial", sans-serif;
     font-size: 0.8125rem;
     line-height: 1.2;
     text-align: left;

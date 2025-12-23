@@ -48,7 +48,7 @@ body {
   margin: 0;
   min-width: 480px;
   min-height: 100dvh;
-  font-family: var(--main-font), system-ui, -apple-system, "Segoe UI";
+  font-family: var(--main-font), system-ui, -apple-system, "Segoe UI", "Arial", sans-serif;
   font-size: var(--font-size);
   line-height: var(--line-height);
   font-style: normal;
