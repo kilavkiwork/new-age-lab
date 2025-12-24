@@ -1,6 +1,6 @@
 footer {
-  margin-block-start: 42px;
-  --line: 0 -1px 0 0 var(--black);
+  margin-block-start: 8px;
+  --line: 0 -1px 0 0 var(--c62);
 
   /* container for footer */
   & .container {
@@ -8,6 +8,10 @@ footer {
     padding-inline: 20px;
     background-color: var(--c72);
     border-radius: var(--rad4);
+  }
+
+  @media (width >= 992px) {
+    margin-block-start: 42px;
   }
 }
 
@@ -28,10 +32,9 @@ footer {
       margin-block-end: 8px;
       width: 100%;
       height: 1px;
-      background-color: var(--white);
+      background-color: var(--c82);
       content: "";
       box-shadow: var(--line);
-      opacity: 0.2;
     }
   }
 }
@@ -59,10 +62,9 @@ footer {
         margin-block-end: 8px;
         width: 100%;
         height: 1px;
-        background-color: var(--white);
+        background-color: var(--c82);
         content: "";
         box-shadow: var(--line);
-        opacity: 0.2;
       }
     }
   }

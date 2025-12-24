@@ -1,7 +1,7 @@
 :root {
   /* fonts */
   --main-font: "Roboto", sans-serif;
-  --secondary-font: "Arial";
+  --secondary-font: "Arial", sans-serif;
   --font-size: 0.875rem;
   --line-height: 1.428;
   /* colors */
@@ -15,12 +15,13 @@
   --c96: #969696;
   --c61: #616161;
   --ca9: #a9a9a9;
-  --c572786: #572786;
   --c91: #919191;
   --cCC: #cccccc;
   --c6f: #6f6f6f;
   --c34: #343434;
   --c72: rgb(114, 114, 114);
+  --c62: #626262;
+  --c82: #828282;
   /* settings */
   --padding: 20px;
   --container: 940px;
@@ -56,8 +57,6 @@ body {
   font-weight: 400;
   color: var(--black);
   background-color: var(--body-bg);
-  background-image: linear-gradient(rgba(220, 220, 220, 0.5), var(--body-bg), rgba(220, 220, 220, 0.5)),
-    url("../../assets/images/backgroung/pattern.png");
   hyphens: auto;
 }
 
@@ -109,6 +108,16 @@ button {
   display: flex;
   flex-direction: column;
   min-height: 100%;
+  /* prettier-ignore */
+  background-image: 
+    linear-gradient(
+      rgba(255, 255, 255, .2),
+      var(--body-bg) 30%,
+      var(--body-bg) 70%,
+      rgba(255, 255, 255, .2)
+    ),
+    url('../../assets/images/background/pattern.png');
+  background-repeat: no-repeat, repeat;
 }
 
 .wrapper > main {
